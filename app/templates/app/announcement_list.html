@@ -16,12 +16,14 @@
 				<div class="col-sm-9 padding-right">
 					<div class="features_items"><!--features_items-->
 						<h2 class="title text-center">لیست محصولات</h2>
-                         {% for announcement in page_obj %}
+                         {% for announcement in announcements_list %}
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
+                                        {% if announcement.image %}
 										<img src="{{ announcement.image.url}}" alt="" />
+                                        {% endif %}
 										<h2>{{ announcement.price}}</h2>
 										<p>{{ announcement.title}}</p>
 										<a href="{% url 'announcement_detail' announcement.id %}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>

@@ -1,4 +1,3 @@
-
 {% extends 'shared/_MainLayout.html' %}
 {% load static %}
 
@@ -18,40 +17,40 @@
                         </ol>
 
                         <div class="carousel-inner">
-{#                        {% if sliders %}#}
-{#                            {% for slider in sliders %}#}
-{#                                <div class="item {{ forloop.first|yesno:"active," }}">#}
-{#                                    <div class="col-sm-6">#}
-{#                                        {% if slider.title %}<h2>{{ slider.title }}</h2>{% else %}#}
-{#                                            <h2>{{ slider.product.title }}</h2>{% endif %}#}
-{#                                        {% if slider.description %}#}
-{#                                            <p>{{ slider.description|slice:255 }}<span style="color : red">...</span>#}
-{#                                            </p>{% else %}#}
-{#                                            <p>{{ slider.product.description|slice:255 }}<span#}
-{#                                                    style="color : red">...</span></p>{% endif %}#}
-{#                                        {% if slider.link %} <a href="{{ slider.link }}" type="button"#}
-{#                                                                class="btn btn-default get"#}
-{#                                                                target="_blank">توضیحات بیشتر</a>{% else %}#}
-{#                                            <a href="/products/{{ slider.product.id }}/{{ slider.product.title }}"#}
-{#                                               type="button"#}
-{#                                               class="btn btn-default get"#}
-{#                                               target="_blank">توضیحات بیشتر</a>#}
-{#                                        {% endif %}#}
-{#                                    </div>#}
-{#                                    <div class="col-sm-6">#}
-{#                                        {% if slider.image %}#}
-{#                                            <img src="{{ slider.image.url }}" class="girl img-responsive"#}
-{#                                                 alt="{{ slider.title }}" width="500"/>#}
-{#                                        {% else %}#}
-{#                                            <img src="{{ slider.product.image.url }}" class="girl img-responsive"#}
-{#                                                 alt="{{ slider.product.title }}" width="500"/>#}
-{#                                        {% endif %}#}
-{##}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            {% endfor %}#}
-{##}
-{#                        {% endif %}#}
+                            {#                        {% if sliders %}#}
+                            {#                            {% for slider in sliders %}#}
+                            {#                                <div class="item {{ forloop.first|yesno:"active," }}">#}
+                            {#                                    <div class="col-sm-6">#}
+                            {#                                        {% if slider.title %}<h2>{{ slider.title }}</h2>{% else %}#}
+                            {#                                            <h2>{{ slider.product.title }}</h2>{% endif %}#}
+                            {#                                        {% if slider.description %}#}
+                            {#                                            <p>{{ slider.description|slice:255 }}<span style="color : red">...</span>#}
+                            {#                                            </p>{% else %}#}
+                            {#                                            <p>{{ slider.product.description|slice:255 }}<span#}
+                            {#                                                    style="color : red">...</span></p>{% endif %}#}
+                            {#                                        {% if slider.link %} <a href="{{ slider.link }}" type="button"#}
+                            {#                                                                class="btn btn-default get"#}
+                            {#                                                                target="_blank">توضیحات بیشتر</a>{% else %}#}
+                            {#                                            <a href="/products/{{ slider.product.id }}/{{ slider.product.title }}"#}
+                            {#                                               type="button"#}
+                            {#                                               class="btn btn-default get"#}
+                            {#                                               target="_blank">توضیحات بیشتر</a>#}
+                            {#                                        {% endif %}#}
+                            {#                                    </div>#}
+                            {#                                    <div class="col-sm-6">#}
+                            {#                                        {% if slider.image %}#}
+                            {#                                            <img src="{{ slider.image.url }}" class="girl img-responsive"#}
+                            {#                                                 alt="{{ slider.title }}" width="500"/>#}
+                            {#                                        {% else %}#}
+                            {#                                            <img src="{{ slider.product.image.url }}" class="girl img-responsive"#}
+                            {#                                                 alt="{{ slider.product.title }}" width="500"/>#}
+                            {#                                        {% endif %}#}
+                            {##}
+                            {#                                    </div>#}
+                            {#                                </div>#}
+                            {#                            {% endfor %}#}
+                            {##}
+                            {#                        {% endif %}#}
                         </div>
 
                         <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
